@@ -5,10 +5,8 @@
 {% block body %}
 <style>
   .wrapper { margin: 1em auto; width: 95%; font: 18px/1.5 sans-serif; }
-  .wrapper code { background: #F5F5F5; padding: 2px 6px; }
   .panel_wrapper { display: table; height: 33%; overflow: hidden; }
   .panel-table { border-spacing: 10px; border-collapse: separate; width: 100%; }
-  .temp_name { display: table-cell; vertical-align: middle; }
   .page-panel { align: center; border: 1px solid grey; }
   .product-panel { height: 300px; width: 100%;}
   .header-panel { align: center; border: 1px solid grey; height: 120px; }
@@ -63,17 +61,17 @@
       </td>
       <td>
         <table class=panel-table>
-          <tr>
-            <td>
-              <a href=#><div align=center class="page-panel product-panel">Wood Ring Crinkle</div></a>
-            </td>
-            <td>
-              <a href=#><div align=center class="page-panel product-panel">Bunny-Ear Teethers</div></a>
-            </td>
-            <td>
-              <a href=#><div align=center class="page-panel product-panel">Other</div></a>
-            </td>
-          </tr>
+          <td class=page-panel style="height: 300px; width: 300px;">
+            <div style="height: 300px; width: 300px;">PRODUCT IMAGE</div>
+          </td>
+          <td>
+           <div class=page-panel style="height: 200px;">
+             DESCRIPTION
+           </div>
+           <div class=page-panel style="height: 100px;">
+             ORDER FORM
+           </div>
+          </td>
         </table>
       </td>
     </tr>
