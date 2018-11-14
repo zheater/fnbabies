@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}F 'n' Babies - Shop{% endblock %}
+
+{% block body %}
+<style>
+  .wrapper { margin: 1em auto; width: 95%; font: 18px/1.5 sans-serif; }
+  .wrapper code { background: #F5F5F5; padding: 2px 6px; }
+  .panel_wrapper { display: table; height: 33%; overflow: hidden; }
+  .panel-table { border-spacing: 10px; border-collapse: separate; }
+  .temp_name { display: table-cell; vertical-align: middle; }
+  .page-panel {align: center; border: 1px solid grey; }
+  .bottom-panel { align: center; border: 1px solid grey; }
+</style>
+
+<div align=center class="wrapper">
+  <table class=panel-table>
+    <tr>
+      <td><div class=page-panel>LOGO</div></td>
+      <td>
+        <table class=panel-table>
+          <tr>
+            <td><div class=page-panel>Welcome to f 'n' babies SHOP!</div></td>
+            <td><div class=page-panel>Handmade at home with love!</div></td>
+          </tr>
+        </table>
+    </tr>
+    <tr>
+      <td>
+        <table class=panel-table>
+          <tr>
+            <td>
+              ABOUT US
+            </td>
+          </tr>
+          <tr>
+            <td>
+              CUSTOMER ORDER
+            </td>
+          </tr>
+          <tr>
+            <td>
+              LOCATION/CONTACT
+            </td>
+          </tr>
+          <tr>
+            <td>
+              CART
+            </td>
+          </tr>
+        </table>
+      </td>
+      <td>
+        <table class=panel-table>
+          <tr>
+            <td>
+              Wood Ring Crinkle
+            </td>
+            <td>
+              Bunny-Ear Teethers
+            </td>
+            <td>
+              Other
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <div class=bottom-panel>
+  </div>
+</div>
+{% endblock %}
