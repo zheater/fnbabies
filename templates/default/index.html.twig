@@ -5,34 +5,44 @@
 {% block body %}
 <style>
   .wrapper { margin: 1em auto; width: 95%; font: 18px/1.5 sans-serif; }
-  .wrapper code { background: #F5F5F5; padding: 2px 6px; }
-  .panel_wrapper { display: table; height: 33%; overflow: hidden; }
-  .temp_name { display: table-cell; vertical-align: middle; }
+  .panel-table { border-spacing: 10px; border-collapse: separate; width: 100%; height: 100%; }
+  .panel_wrapper { display: table; height: 100%; overflow: hidden; }
+  .page-panel { align: center; border: 1px solid grey; }
+  .side-panel { display: table-cell; vertical-align: middle; width: 175px; }
 </style>
 
-{% if false %}
-<div align=center class="wrapper">
-<h1>SITE UNDER CONSTRUCTION</h1>
-<img src="logo.jpg" style="height: 50vw;">
-</div>
-{% else %}
 
 <div align=center class="wrapper">
-  <table>
+  <table class=panel-table>
     <td style="height: 100px;">
-      <div class="about_wrapper panel_wrapper"><div class="temp_name"><h3>About</h3></div></div>
-      <div class="follow_wrapper panel_wrapper"><div class="temp_name"><h3>Follow</h3></div></div>
-      <div class="shop_wrapper panel_wrapper"><div class="temp_name"><h3>Shop</h3></div></div>
+      <table class=panel-table>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>About</h3></div></div></a></td>
+        </tr>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>Follow</h3></div></div></a></td>
+        </tr>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>Shop</h3></div></div></a></td>
+        </tr>
+      </table>
     </td>
     <td>
-      <div class="logo_wrapper" style="height:100%;"><img src="logo.jpg" style="height: 50vw;"></div>
+      <div class="logo_wrapper page-panel" style="height:100%;"><img src="logo.jpg" style="height: 50vw;"></div>
     </td>
     <td style="height: 100px;">
-      <div class="request_wrapper panel_wrapper"><div class="temp_name"><h3>Request</h3></div></div>
-      <div class="placeholder_wrapper panel_wrapper"><div class="temp_name"><h3>?</h3></div></div>
-      <div class="contact_wrapper panel_wrapper"><div class="temp_name"><h3>Contact</h3></div></div>
+      <table class=panel-table>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>Request</h3></div></div></a></td>
+        </tr>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>?</h3></div></div></a></td>
+        </tr>
+        <tr>
+          <td><a href=#><div class="panel_wrapper page-panel"><div align=center class="side-panel"><h3>Contact</h3></div></div></a></td>
+        </tr>
+      </table>
     </td>
   </table>
 </div>
-{% endif %}
 {% endblock %}
